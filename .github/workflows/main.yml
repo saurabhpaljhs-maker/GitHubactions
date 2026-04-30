@@ -1,18 +1,21 @@
 name: My CI/CD pipeline in GitHub Actions
-
 on:
   push:
     branches:
       - main
-
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
-
-      - name: my first step
+      - name: initialize repo
         run: |
           echo "This is Devops lab"
           uname -a
+      - name: Check the docker installation
+        run: |
+          docker
+          docker images
+      - name: Run docker container
+        run: |
+          docker run hello world
