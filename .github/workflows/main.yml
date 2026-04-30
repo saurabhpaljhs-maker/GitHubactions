@@ -18,4 +18,4 @@ jobs:
           docker images
       - name: Run docker container
         run: |
-          docker run hello world
+          docker run hello-world
