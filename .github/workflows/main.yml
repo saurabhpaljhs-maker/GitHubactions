@@ -2,17 +2,17 @@ name: My CI/CD pipeline in GitHub Actions
 
 on:
   push:
-    branches: 
-       -main
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-       - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-       - name: my first step
-        run:
-            echo "This is Devops lab"
-            uname-a   
+      - name: my first step
+        run: |
+          echo "This is Devops lab"
+          uname -a
