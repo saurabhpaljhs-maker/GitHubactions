@@ -2,7 +2,8 @@ name: My CI/CD pipeline in GitHub Actions
 
 on:
   push:
-    branches: main
+    branches: 
+       -main
 
 jobs:
   build:
